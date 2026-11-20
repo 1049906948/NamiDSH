@@ -1,0 +1,98 @@
+{
+  "lockfileVersion": 1,
+  "configVersion": 0,
+  "workspaces": {
+    "": {
+      "name": "nami-dsh",
+      "devDependencies": {
+        "@types/node": "^22.10.0",
+        "typescript": "^5.8.0",
+      },
+    },
+    "apps/web": {
+      "name": "@nami/dsh-web",
+      "version": "0.1.0",
+    },
+    "packages/agent-loop": {
+      "name": "@nami/dsh-agent-loop",
+      "version": "0.1.0",
+    },
+    "packages/agent-spine": {
+      "name": "@nami/dsh-agent-spine",
+      "version": "0.1.0",
+    },
+    "packages/cordis": {
+      "name": "@nami/cordis",
+      "version": "0.1.0",
+    },
+    "packages/llm": {
+      "name": "@nami/dsh-llm",
+      "version": "0.1.0",
+    },
+    "packages/llm-deepseek": {
+      "name": "@nami/dsh-llm-deepseek",
+      "version": "0.1.0",
+    },
+    "packages/llm-mock": {
+      "name": "@nami/dsh-llm-mock",
+      "version": "0.1.0",
+    },
+    "packages/session": {
+      "name": "@nami/dsh-session",
+      "version": "0.1.0",
+    },
+    "packages/system-prompt": {
+      "name": "@nami/dsh-system-prompt",
+      "version": "0.1.0",
+    },
+    "packages/tool-fs": {
+      "name": "@nami/dsh-tool-fs",
+      "version": "0.1.0",
+    },
+    "packages/tool-time": {
+      "name": "@nami/dsh-tool-time",
+      "version": "0.1.0",
+    },
+    "packages/tools": {
+      "name": "@nami/dsh-tools",
+      "version": "0.1.0",
+    },
+    "packages/webserver": {
+      "name": "@nami/dsh-webserver",
+      "version": "0.1.0",
+    },
+  },
+  "packages": {
+    "@nami/cordis": ["@nami/cordis@workspace:packages/cordis"],
+
+    "@nami/dsh-agent-loop": ["@nami/dsh-agent-loop@workspace:packages/agent-loop"],
+
+    "@nami/dsh-agent-spine": ["@nami/dsh-agent-spine@workspace:packages/agent-spine"],
+
+    "@nami/dsh-llm": ["@nami/dsh-llm@workspace:packages/llm"],
+
+    "@nami/dsh-llm-deepseek": ["@nami/dsh-llm-deepseek@workspace:packages/llm-deepseek"],
+
+    "@nami/dsh-llm-mock": ["@nami/dsh-llm-mock@workspace:packages/llm-mock"],
+
+    "@nami/dsh-session": ["@nami/dsh-session@workspace:packages/session"],
+
+    "@nami/dsh-system-prompt": ["@nami/dsh-system-prompt@workspace:packages/system-prompt"],
+
+    "@nami/dsh-tool-fs": ["@nami/dsh-tool-fs@workspace:packages/tool-fs"],
+
+    "@nami/dsh-tool-time": ["@nami/dsh-tool-time@workspace:packages/tool-time"],
+
+    "@nami/dsh-tools": ["@nami/dsh-tools@workspace:packages/tools"],
+
+    "@nami/dsh-web": ["@nami/dsh-web@workspace:apps/web"],
+
+    "@nami/dsh-webserver": ["@nami/dsh-webserver@workspace:packages/webserver"],
+
+    "@types/node": ["@types/node@22.20.5", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-U2+DNr+wSjpsTS/wZGYHq7GcwfuSmKiKvoPvK22zwTlRhU91yOniN4qRR5KhIjvif7ysw/dz/hKmfDH0Ris4aA=="],
+
+    "typescript": ["typescript@5.9.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw=="],
+
+    "undici-types": ["undici-types@6.21.0", "", {}, "sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ=="],
+  }
+}

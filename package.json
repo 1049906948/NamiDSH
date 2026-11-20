@@ -13,6 +13,7 @@
   },
   "scripts": {
     "start": "node apps/web/src/main.ts",
+    "dev":"node --env-file=.env apps/web/src/main.ts",
     "test": "node tests/compat.ts && node tests/agent.ts",
     "check": "tsc"
   },
